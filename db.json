@@ -1,6 +1,7 @@
 {
   "spells": [
   {
+	"id" : 0,
       "name": "Spell1",
       "type": "red",
       "description": "lorem ipsum",
@@ -9,6 +10,7 @@
       "area": 1,
       "range": 4
     },{
+	"id" : 0,
       "name": "Spell2",
       "type": "red",
       "description": "lorem ipsum",
