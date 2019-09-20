@@ -1,0 +1,2370 @@
+{
+  "magic": {
+    "aid": {
+      "name": "Aid",
+      "type": "support",
+      "description": "Heals an ally unit",
+      "element": "white",
+      "value": 120,
+      "mpcost": 45,
+      "area": 1,
+      "range": 2,
+      "target": "allies",
+      "effects": []
+    },
+    "heal": {
+      "name": "Heal",
+      "type": "support",
+      "description": "Heals an ally unit",
+      "element": "white",
+      "value": 180,
+      "mpcost": 65,
+      "area": 1,
+      "range": 3,
+      "target": "allies",
+      "effects": []
+    },
+    "cure": {
+      "name": "Cure",
+      "type": "support",
+      "description": "Removes negative status effect on the target unit",
+      "element": "white",
+      "value": 0,
+      "mpcost": 54,
+      "area": 1,
+      "range": 4,
+      "target": "allies",
+      "effects": []
+    },
+    "divine-ray": {
+      "name": "Divine Ray",
+      "type": "offensive",
+      "description": "A damaging spell bring forth by celestial powers",
+      "element": "white",
+      "value": 180,
+      "mpcost": 112,
+      "area": 1,
+      "range": 2,
+      "target": "enemies",
+      "effects": []
+    },
+    "area-heal": {
+      "name": "Area Heal",
+      "type": "support",
+      "description": "Heals all allies up to 2 hexes away from the caster",
+      "element": "white",
+      "value": 120,
+      "mpcost": 147,
+      "area": 2,
+      "range": 0,
+      "target": "enemies",
+      "effects": []
+    },
+    "halo": {
+      "name": "Halo",
+      "type": "support",
+      "description": "Ensures that the affected target's attack will hit",
+      "element": "white",
+      "value": 0,
+      "mpcost": 88,
+      "area": 0,
+      "range": 4,
+      "target": "allies",
+      "effects": [
+        "hit+100"
+      ]
+    },
+    "holy-word": {
+      "name": "Holy Word",
+      "type": "offensive",
+      "description": "Ensures that the affected target's attack will hit",
+      "element": "white",
+      "value": 70,
+      "mpcost": 183,
+      "area": 4,
+      "range": 0,
+      "target": "enemies",
+      "effects": []
+    },
+    "weakness": {
+      "name": "Weakness",
+      "type": "offensive",
+      "description": "Halves an enemy's ATK and DEF",
+      "element": "black",
+      "value": 0,
+      "mpcost": 66,
+      "area": 0,
+      "range": 4,
+      "target": "enemies",
+      "effects": [
+        "weakened"
+      ]
+    },
+    "dimension": {
+      "name": "Dimension",
+      "type": "defensive",
+      "description": "Teleports an enemy away.",
+      "element": "black",
+      "value": 0,
+      "mpcost": 93,
+      "area": 0,
+      "range": 4,
+      "target": "enemies",
+      "effects": [
+        "teleported"
+      ]
+    },
+    "venom": {
+      "name": "Venom",
+      "type": "offensive",
+      "description": "Apply magic damage as well as poison.",
+      "element": "black",
+      "value": 70,
+      "mpcost": 45,
+      "area": 0,
+      "range": 3,
+      "target": "enemies",
+      "effects": [
+        "poisoned"
+      ]
+    },
+    "curse": {
+      "name": "Curse",
+      "type": "offensive",
+      "description": "Apply magic damage.",
+      "element": "black",
+      "value": 170,
+      "mpcost": 108,
+      "area": 0,
+      "range": 2,
+      "target": "enemies",
+      "effects": []
+    },
+    "necro-rebirth": {
+      "name": "Necro Rebirth",
+      "type": "defensive",
+      "description": "Brings a dead unit back to life. Lasts until combat ends.",
+      "element": "black",
+      "value": 0,
+      "mpcost": 97,
+      "area": 0,
+      "range": 1,
+      "target": "allies",
+      "effects": []
+    },
+    "meteor-doom": {
+      "name": "Meteor Doom",
+      "type": "offensive",
+      "description": "Summon a deadly meteors collision, affects a circle with radius of 3 hexes. Friendly fire.",
+      "element": "black",
+      "value": 140,
+      "mpcost": 255,
+      "area": 3,
+      "range": 3,
+      "target": "enemies",
+      "effects": []
+    },
+    "flame": {
+      "name": "Flame",
+      "type": "offensive",
+      "description": "Conjure flame to damage target enemy unit.",
+      "element": "red",
+      "value": 120,
+      "mpcost": 68,
+      "area": 1,
+      "range": 3,
+      "target": "enemies",
+      "effects": []
+    },
+    "geno-flame": {
+      "name": "Geno-Flame",
+      "type": "offensive",
+      "description": "Conjure flame in an area to damage multiple enemies.",
+      "element": "red",
+      "value": 90,
+      "mpcost": 166,
+      "area": 3,
+      "range": 0,
+      "target": "enemies",
+      "effects": []
+    },
+    "empower": {
+      "name": "Empower",
+      "type": "support",
+      "description": "Increases offensive power temporarily",
+      "element": "red",
+      "value": 1.5,
+      "mpcost": 62,
+      "area": 1,
+      "range": 4,
+      "target": "allies",
+      "effects": []
+    },
+    "thunder": {
+      "name": "Thunder",
+      "type": "offensive",
+      "description": "Summon a thunder to damage target enemy unit.",
+      "element": "red",
+      "value": 150,
+      "mpcost": 91,
+      "area": 1,
+      "range": 3,
+      "target": "enemies",
+      "effects": []
+    },
+    "exa-blast": {
+      "name": "Exa-Blast",
+      "type": "offensive",
+      "description": "High damage offensive magic.",
+      "element": "red",
+      "value": 200,
+      "mpcost": 152,
+      "area": 1,
+      "range": 2,
+      "target": "enemies",
+      "effects": []
+    },
+    "geno-thunder": {
+      "name": "Geno-Thunder",
+      "type": "offensive",
+      "description": "High damage area affect magic.",
+      "element": "red",
+      "value": 120,
+      "mpcost": 193,
+      "area": 1,
+      "range": 3,
+      "target": "hex",
+      "effects": []
+    },
+    "fog": {
+      "name": "Fog",
+      "type": "offensive",
+      "description": "Lowers target's hit rate.",
+      "element": "blue",
+      "value": 0,
+      "mpcost": 49,
+      "area": 1,
+      "range": 4,
+      "target": "enemies",
+      "effects": []
+    },
+    "frost": {
+      "name": "Frost",
+      "type": "offensive",
+      "description": "Summon frost to damage target enemy unit",
+      "element": "blue",
+      "value": 120,
+      "mpcost": 68,
+      "area": 1,
+      "range": 3,
+      "target": "enemies",
+      "effects": []
+    },
+    "geno-frost": {
+      "name": "Geno-Frost",
+      "type": "offensive",
+      "description": "Summon frost in an area to damage multiple enemy unit",
+      "element": "blue",
+      "value": 90,
+      "mpcost": 166,
+      "area": 3,
+      "range": 0,
+      "target": "enemies",
+      "effects": []
+    },
+    "charm": {
+      "name": "Charm",
+      "type": "offensive",
+      "description": "Makes an enemy fight other enemies.",
+      "element": "blue",
+      "value": 0,
+      "mpcost": 100,
+      "area": 0,
+      "range": 2,
+      "target": "enemies",
+      "effects": [
+        "charmed"
+      ]
+    },
+    "flight": {
+      "name": "Flight",
+      "type": "support",
+      "description": "Allows target to fly. Flying targets can move farther and get a 20% evasion boost against ground units.",
+      "element": "blue",
+      "value": 0,
+      "mpcost": 100,
+      "area": 0,
+      "range": 3,
+      "target": "allies",
+      "effects": [
+        "flight"
+      ]
+    },
+    "fallberg": {
+      "name": "Fall Berg",
+      "type": "offensive",
+      "description": "Summon a iceberg to damage enemies in an area.",
+      "element": "blue",
+      "value": 190,
+      "mpcost": 135,
+      "area": 1,
+      "range": 2,
+      "target": "hex",
+      "effects": []
+    },
+    "silent": {
+      "name": "Silent",
+      "type": "offensive",
+      "description": "Target will be unable to use magic.",
+      "element": "green",
+      "value": 0,
+      "mpcost": 50,
+      "area": 1,
+      "range": 4,
+      "target": "enemies",
+      "effects": [
+        "SILENCED"
+      ]
+    },
+    "protect": {
+      "name": "Protect",
+      "type": "support",
+      "description": "Adds 30 DEF to a target.",
+      "element": "green",
+      "value": 30,
+      "mpcost": 61,
+      "area": 1,
+      "range": 3,
+      "target": "allies",
+      "effects": [
+        "DEF+30"
+      ]
+    },
+    "petrify": {
+      "name": "Petrify",
+      "type": "offensive",
+      "description": "Turns an enemy into a statue. Petrified enemies have 150 DEF, which means that they're hard to damage, but they can't counterattack.",
+      "element": "green",
+      "value": 150,
+      "mpcost": 77,
+      "area": 1,
+      "range": 2,
+      "target": "enemies",
+      "effects": [
+        "DEF+150",
+        "PETRIFIED"
+      ]
+    },
+    "accel": {
+      "name": "Accel",
+      "type": "support",
+      "description": "Increases a unit's MOV stat for one turn",
+      "element": "green",
+      "value": 0,
+      "mpcost": 59,
+      "area": 1,
+      "range": 3,
+      "target": "allies",
+      "effects": [
+        "MOV+2"
+      ]
+    },
+    "paralyze": {
+      "name": "Paralyze",
+      "type": "offensive",
+      "description": "Causes Paralysis. Paralyzed enemies can't counterattack.",
+      "element": "green",
+      "value": 0,
+      "mpcost": 77,
+      "area": 1,
+      "range": 3,
+      "target": "allies",
+      "effects": [
+        "PARALYZED"
+      ]
+    },
+    "react": {
+      "name": "React",
+      "type": "support",
+      "description": "Enables another unit to go twice in a turn.",
+      "element": "green",
+      "value": 0,
+      "mpcost": 126,
+      "area": 1,
+      "range": 2,
+      "target": "allies",
+      "effects": [
+        "REACT"
+      ]
+    }
+  },
+  "attacks": {
+    "kunai": {
+      "name": "Kunai",
+      "description": "Attack with kunai with a 25% chance to poison",
+      "type": "melee",
+      "range": 1,
+      "mpcost": 0,
+      "target": "enemies",
+      "effects": [
+        "poison25"
+      ]
+    },
+    "illusion": {
+      "name": "Illusion",
+      "description": "Critical attack",
+      "type": "melee",
+      "range": 1,
+      "mpcost": 0,
+      "target": "enemies",
+      "effects": []
+    },
+    "shuriken": {
+      "name": "Shuriken",
+      "description": "Throw shuriken",
+      "type": "projectile",
+      "range": 3,
+      "mpcost": 0,
+      "target": "enemies",
+      "effects": []
+    },
+    "katana-blade": {
+      "name": "Katana Blade",
+      "description": "Attack with Katana",
+      "type": "melee",
+      "range": 1,
+      "mpcost": 0,
+      "target": "enemies",
+      "effects": []
+    },
+    "shadow-moon": {
+      "name": "Shadow Moon",
+      "description": "Critical Attack",
+      "type": "melee",
+      "range": 1,
+      "mpcost": 0,
+      "target": "enemies",
+      "effects": []
+    },
+    "iai-slash": {
+      "name": "Iai Slash",
+      "description": "Attack with spiritual wave",
+      "type": "projectile",
+      "range": 3,
+      "mpcost": 45,
+      "target": "enemies",
+      "effects": []
+    },
+    "fighter-blade": {
+      "name": "Fighter Blade",
+      "description": "Attack with Sword",
+      "type": "melee",
+      "range": 1,
+      "mpcost": 0,
+      "target": "enemies",
+      "effects": []
+    },
+    "power-strike": {
+      "name": "Power Strike",
+      "description": "Critical Attack",
+      "type": "melee",
+      "range": 1,
+      "mpcost": 0,
+      "target": "enemies",
+      "effects": []
+    }
+  },
+  "skills": {
+    "HIT+5": {
+      "name": "Hit + 5%",
+      "value": 5,
+      "description": "Increases hit ratio by 5%"
+    },
+    "HIT+10": {
+      "name": "Hit + 10%",
+      "value": 10,
+      "description": "Increases hit ratio by 10%"
+    },
+    "MAGICRESIST+10": {
+      "name": "Magic Resistance 10%",
+      "value": 10,
+      "description": "Increases magic resistance by 10%"
+    },
+    "HIT-AND-RUN": {
+      "name": "Hit and Run",
+      "value": 0,
+      "description": "Allows extra move after attacking"
+    }
+  },
+  "items": {
+    "item1": {
+      "name": "item1",
+      "type": "accessories",
+      "element": "n/a",
+      "description": "lorem ipsum dolor",
+      "effects": [
+        "ATK+20"
+      ]
+    },
+    "item2": {
+      "name": "item2",
+      "type": "consumables",
+      "element": "n/a",
+      "description": "lorem ipsum dolor",
+      "effects": [
+        "DEF+10",
+        "ATK+10"
+      ]
+    }
+  },
+  "characters": {
+    "minerva": {
+      "name": "Minerva",
+      "description": "Minerva is lorem ipsum dolor sit amet",
+      "type": "knight",
+      "class": "witch",
+      "lvl": 7,
+      "exp": 100,
+      "runepower": 160,
+      "runearea": 4,
+      "runegrowth": [
+        5,
+        10
+      ],
+      "rawstats": {
+        "hp": 100,
+        "mp": 100,
+        "str": 50,
+        "int": 50,
+        "agi": 50,
+        "atk": 50,
+        "def": 50
+      }
+    },
+    "nux": {
+      "name": "Nux",
+      "description": "Nux is lorem ipsum dolor sit amet",
+      "type": "knight",
+      "class": "grappler",
+      "lvl": 13,
+      "exp": 100,
+      "runepower": 230,
+      "runearea": 3,
+      "runegrowth": [
+        5,
+        10
+      ],
+      "rawstats": {
+        "hp": 100,
+        "mp": 100,
+        "str": 50,
+        "int": 50,
+        "agi": 50,
+        "atk": 50,
+        "def": 50
+      }
+    },
+    "trad": {
+      "name": "Trad",
+      "description": "Minerva is lorem ipsum dolor sit amet",
+      "type": "ruler",
+      "class": "cavalier",
+      "lvl": 10,
+      "exp": 100,
+      "runepower": 230,
+      "runearea": 3,
+      "runegrowth": [
+        5,
+        10
+      ],
+      "rawstats": {
+        "hp": 100,
+        "mp": 100,
+        "str": 50,
+        "int": 50,
+        "agi": 50,
+        "atk": 50,
+        "def": 50
+      }
+    },
+    "falonsaren": {
+      "name": "Falonsaren",
+      "description": "Falonsaren is lorem ipsum dolor sit amet",
+      "type": "knight",
+      "class": "warlock",
+      "lvl": 18,
+      "exp": 100,
+      "runepower": 230,
+      "runearea": 3,
+      "runegrowth": [
+        5,
+        10
+      ],
+      "rawstats": {
+        "hp": 100,
+        "mp": 100,
+        "str": 50,
+        "int": 50,
+        "agi": 50,
+        "atk": 50,
+        "def": 50
+      }
+    },
+    "manela": {
+      "name": "Manela",
+      "description": "Manela is lorem ipsum dolor sit amet",
+      "type": "knight",
+      "class": "healer",
+      "lvl": 12,
+      "exp": 100,
+      "runepower": 230,
+      "runearea": 3,
+      "runegrowth": [
+        5,
+        10
+      ],
+      "rawstats": {
+        "hp": 100,
+        "mp": 100,
+        "str": 50,
+        "int": 50,
+        "agi": 50,
+        "atk": 50,
+        "def": 50
+      }
+    },
+    "adrastos": {
+      "name": "Adrastos",
+      "description": "Adrastos is lorem ipsum dolor sit amet",
+      "type": "knight",
+      "class": "samurai",
+      "lvl": 14,
+      "exp": 100,
+      "runepower": 230,
+      "runearea": 3,
+      "runegrowth": [
+        5,
+        10
+      ],
+      "rawstats": {
+        "hp": 100,
+        "mp": 100,
+        "str": 50,
+        "int": 50,
+        "agi": 50,
+        "atk": 50,
+        "def": 50
+      }
+    },
+    "lumina": {
+      "name": "Lumina",
+      "description": "Lumina is lorem ipsum dolor sit amet",
+      "type": "knight",
+      "class": "scout",
+      "lvl": 6,
+      "exp": 100,
+      "runepower": 130,
+      "runearea": 3,
+      "runegrowth": [
+        5,
+        10
+      ],
+      "rawstats": {
+        "hp": 100,
+        "mp": 100,
+        "str": 50,
+        "int": 50,
+        "agi": 50,
+        "atk": 50,
+        "def": 50
+      }
+    }
+  },
+  "classes": {
+    "fighter": {
+      "name": "Fighter",
+      "description": "Fighter is a basic male class",
+      "move": 4,
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": 50,
+      "def": 50,
+      "statgrowth": {
+        "hp": [
+          10,
+          30
+        ],
+        "mp": [
+          1,
+          3
+        ],
+        "str": [
+          1,
+          3
+        ],
+        "int": [
+          1,
+          3
+        ],
+        "agi": [
+          1,
+          3
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "class": "priest",
+          "reqlvl": 10
+        },
+        {
+          "class": "paladin",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "samurai": {
+      "name": "Samurai",
+      "description": "Samurai is a basic male class",
+      "move": "5",
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": "70",
+      "def": "60",
+      "statgrowth": {
+        "hp": [
+          "10",
+          "30"
+        ],
+        "mp": [
+          "1",
+          "3"
+        ],
+        "str": [
+          "1",
+          "3"
+        ],
+        "int": [
+          "1",
+          "3"
+        ],
+        "agi": [
+          "1",
+          "3"
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "class": "shogun",
+          "reqlvl": "20"
+        }
+      ]
+    },
+    "enchantress": {
+      "name": "Enchantress",
+      "description": "Enchantress is a basic female magic casting class",
+      "move": 4,
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": 45,
+      "def": 50,
+      "statgrowth": {
+        "hp": [
+          10,
+          30
+        ],
+        "mp": [
+          1,
+          3
+        ],
+        "str": [
+          1,
+          3
+        ],
+        "int": [
+          1,
+          3
+        ],
+        "agi": [
+          1,
+          3
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "class": "witch",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "witch": {
+      "name": "Witch",
+      "description": "Witch is a second tier female magic casting class",
+      "move": 4,
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": 50,
+      "def": 55,
+      "statgrowth": {
+        "hp": [
+          10,
+          30
+        ],
+        "mp": [
+          1,
+          3
+        ],
+        "str": [
+          1,
+          3
+        ],
+        "int": [
+          1,
+          3
+        ],
+        "agi": [
+          1,
+          3
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": []
+    },
+    "cleric": {
+      "name": "Cleric",
+      "description": "Cleric is a basic female support magic casting class",
+      "move": 4,
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": 45,
+      "def": 55,
+      "statgrowth": {
+        "hp": [
+          10,
+          30
+        ],
+        "mp": [
+          1,
+          3
+        ],
+        "str": [
+          1,
+          3
+        ],
+        "int": [
+          1,
+          3
+        ],
+        "agi": [
+          1,
+          3
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": []
+    },
+    "scout": {
+      "name": "Scout",
+      "description": "Scout is a basic female ranged attack class",
+      "move": 4,
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": 50,
+      "def": 55,
+      "statgrowth": {
+        "hp": [
+          10,
+          30
+        ],
+        "mp": [
+          1,
+          3
+        ],
+        "str": [
+          1,
+          3
+        ],
+        "int": [
+          1,
+          3
+        ],
+        "agi": [
+          1,
+          3
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "class": "archer",
+          "reqlvl": 10
+        },
+        {
+          "class": "lancer",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "warlock": {
+      "name": "Warlock",
+      "description": "Warlock is a second tier male destruction magic casting class",
+      "move": 4,
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": 44,
+      "def": 55,
+      "statgrowth": {
+        "hp": [
+          10,
+          30
+        ],
+        "mp": [
+          1,
+          3
+        ],
+        "str": [
+          1,
+          3
+        ],
+        "int": [
+          1,
+          3
+        ],
+        "agi": [
+          1,
+          3
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": []
+    },
+    "druid": {
+      "name": "Druid",
+      "description": "Druid is a basic destruction magic casting class",
+      "move": 4,
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": 44,
+      "def": 55,
+      "statgrowth": {
+        "hp": [
+          10,
+          30
+        ],
+        "mp": [
+          1,
+          3
+        ],
+        "str": [
+          1,
+          3
+        ],
+        "int": [
+          1,
+          3
+        ],
+        "agi": [
+          1,
+          3
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "class": "mage",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "cavalier": {
+      "name": "Cavalier",
+      "description": "Cavalier is second tier male armored assault class",
+      "move": 5,
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": 44,
+      "def": 55,
+      "statgrowth": {
+        "hp": [
+          10,
+          30
+        ],
+        "mp": [
+          1,
+          3
+        ],
+        "str": [
+          1,
+          3
+        ],
+        "int": [
+          1,
+          3
+        ],
+        "agi": [
+          1,
+          3
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "class": "champion",
+          "reqlvl": 20
+        }
+      ]
+    },
+    "paladin": {
+      "name": "Paladin",
+      "description": "Paladin is basic male armored assault class",
+      "move": 5,
+      "movetype": "land",
+	  "size" : "normal",
+      "atk": 44,
+      "def": 55,
+      "statgrowth": {
+        "hp": [
+          10,
+          30
+        ],
+        "mp": [
+          1,
+          3
+        ],
+        "str": [
+          1,
+          3
+        ],
+        "int": [
+          1,
+          3
+        ],
+        "agi": [
+          1,
+          3
+        ]
+      },
+      "attacks": [
+        "sword"
+      ],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "class": "cavalier",
+          "reqlvl": 10
+        }
+      ]
+    }
+  },
+  "monsters": {
+    "ghoul": {
+      "name": "Ghoul",
+      "description": "",
+      "runecost": 15,
+      "upkeep": 6,
+      "move": 6,
+      "movetype": "land",
+		"size" : "normal",
+      "hp": 410,
+      "mp": 100,
+      "str": 55,
+      "int": 20,
+      "agi": 50,
+      "atk": 60,
+      "def": 80,
+      "statgrowth": {
+        "hp": [
+          8,
+          12
+        ],
+        "mp": [
+          2,
+          4
+        ],
+        "str": [
+          0,
+          2
+        ],
+        "int": [
+          0,
+          1
+        ],
+        "agi": [
+          0,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "monster": "skeleton",
+          "reqlvl": 5
+        },
+        {
+          "monster": "vampire",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "giant": {
+      "name": "Giant",
+      "runecost": 60,
+      "upkeep": 28,
+      "move": 4,
+      "movetype": "heavy",
+	  "size" : "normal",
+      "hp": 540,
+      "mp": 180,
+      "str": 95,
+      "int": 45,
+      "agi": 40,
+      "atk": 55,
+      "def": 90,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          2,
+          4
+        ],
+        "str": [
+          1,
+          2
+        ],
+        "int": [
+          0,
+          1
+        ],
+        "agi": [
+          0,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "monster": "gigas",
+          "reqlvl": 10
+        },
+        {
+          "monster": "cyclops",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "giant-scorpion": {
+      "name": "Giant Scorpion",
+      "runecost": 20,
+      "upkeep": 10,
+      "move": 5,
+      "movetype": "slither",
+	  "size" : "normal",
+      "hp": 270,
+      "mp": 0,
+      "str": 60,
+      "int": 10,
+      "agi": 45,
+      "atk": 60,
+      "def": 120,
+      "statgrowth": {
+        "hp": [
+          8,
+          12
+        ],
+        "mp": [
+          0,
+          0
+        ],
+        "str": [
+          0,
+          2
+        ],
+        "int": [
+          0,
+          1
+        ],
+        "agi": [
+          0,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [],
+      "upgrades": [
+        {
+          "monster": "death-needle",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "pixie": {
+      "name": "Pixie",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "angel": {
+      "name": "Angel",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "demon": {
+      "name": "Demon",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "hydra": {
+      "name": "Hydra",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "lizard-man": {
+      "name": "Lizard Man",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "clay-golem": {
+      "name": "Clay Golem",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "unicorn": {
+      "name": "Unicorn",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "centaur": {
+      "name": "Centaur",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "ground",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "merman": {
+      "name": "Merman",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "roc": {
+      "name": "Roc",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "gryphon": {
+      "name": "Gryphon",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "high-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "jinn": {
+      "name": "Jinn",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "draugr": {
+      "name": "Draugr",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 4,
+      "movetype": "ground",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    },
+    "lich": {
+      "name": "Lich",
+      "runecost": 30,
+      "upkeep": 12,
+      "move": 5,
+      "movetype": "low-sky",
+	  "size" : "normal",
+      "hp": 220,
+      "mp": 160,
+      "str": 30,
+      "int": 65,
+      "agi": 80,
+      "atk": 70,
+      "def": 60,
+      "statgrowth": {
+        "hp": [
+          4,
+          8
+        ],
+        "mp": [
+          4,
+          6
+        ],
+        "str": [
+          0,
+          1
+        ],
+        "int": [
+          0,
+          2
+        ],
+        "agi": [
+          1,
+          2
+        ]
+      },
+      "attacks": [],
+      "abilities": [],
+      "magic": [
+        "protect",
+        "silent"
+      ],
+      "upgrades": [
+        {
+          "monster": "fairy",
+          "reqlvl": 10
+        }
+      ]
+    }
+  },
+  "factions": {
+    "atnorte": {
+      "name": "Atnorte",
+      "description": "Atnorte is a country situated north. It is a country full of nobles.",
+      "relations": {},
+      "ruler": "trad",
+	  "territories" : [
+		"hadrian"
+	  ],
+      "knights": [
+        "nux",
+		"lumina",
+		"adrastos",
+		"falonsaren"
+      ]
+    }
+  },
+  "territories": {
+    "hadrian": {
+      "name": "Hadrian",
+      "description": "Hadrian is the capital of Atnorte",
+      "income": "",
+      "troops": [
+        "trad",
+		"nux",
+		"lumina",
+		"adrastos",
+		"falonsaren"
+      ],
+      "reserves": [
+        "unicorn1b",
+        "giant1b",
+        "pixie1b",
+        "lizard-man1c",
+        "clay-golem1b",
+        "giant-scorpion1b",
+        "giant-scorpion1c",
+        "angel1c",
+		"gryphon1a",
+		"merman1a",
+		"satyr1a",
+		"cyclops1a",
+		"merfolk1a",
+		"wyvern1a",
+		"cerberus1a",
+		"chimaera1a",
+		"cockatrice1a",
+		"jinn1a",
+		"lich1a",
+		"draugr1a",
+		"yeti1a",
+		"hydra1a",
+		"imp1a",
+		"giant-spider1a",
+		"harpy1a",
+		"behemoth1a",
+		"mandrake1a",
+		"reaper1a",
+		"wyrm1a",
+		"wolf1a",
+		"skeleton1a",
+		"titan1a"
+      ]
+    }
+  },
+  "troops": {
+    "trad": {
+      "leader": "trad",
+      "faction": "atnorte",
+      "location": "hadrian",
+      "status": "wait",
+      "party": [
+        "ghoul1a",
+        "clay-golem1a",
+        "ghoul1b",
+        "giant1a"
+      ]
+    },
+    "nux": {
+      "leader": "nux",
+      "faction": "atnorte",
+      "location": "hadrian",
+      "status": "wait",
+      "party": [
+        "ghoul1c",
+        "unicorn1a",
+        "pixie1a",
+        "giant-scorpion1a",
+        "angel1a"
+      ]
+    },
+    "lumina": {
+      "leader": "lumina",
+      "faction": "atnorte",
+      "location": "hadrian",
+      "status": "wait",
+      "party": [
+        "centaur1a",
+        "centaur1b",
+        "centaur1c"
+      ]
+    },
+    "adrastos": {
+      "leader": "adrastos",
+      "faction": "atnorte",
+      "location": "hadrian",
+      "status": "wait",
+      "party": [
+        "lizard-man1a",
+        "lizard-man1b",
+        "giant1c"
+      ]
+    },
+    "falonsaren": {
+      "leader": "falonsaren",
+      "faction": "atnorte",
+      "location": "hadrian",
+      "status": "wait",
+      "party": [
+        "angel1b"
+      ]
+    }
+  },
+  "units": {
+    "ghoul1a": {
+      "name": "Ghoul",
+      "type": "monster",
+      "class": "ghoul",
+      "lvl": 1
+    },
+    "ghoul1b": {
+      "name": "Ghoul1b",
+      "type": "monster",
+      "class": "ghoul",
+      "lvl": 1
+    },
+    "ghoul1c": {
+      "name": "Ghoul1c",
+      "type": "monster",
+      "class": "ghoul",
+      "lvl": 1
+    },
+    "unicorn1a": {
+      "name": "Unicorn1a",
+      "type": "monster",
+      "class": "unicorn",
+      "lvl": 1
+    },
+    "unicorn1b": {
+      "name": "Unicorn1a",
+      "type": "monster",
+      "class": "unicorn",
+      "lvl": 1
+    },
+    "giant1a": {
+      "name": "Giant",
+      "type": "monster",
+      "class": "giant",
+      "lvl": 1
+    },
+    "giant1b": {
+      "name": "Giant",
+      "type": "monster",
+      "class": "giant",
+      "lvl": 1
+    },
+    "giant1c": {
+      "name": "Giant",
+      "type": "monster",
+      "class": "giant",
+      "lvl": 1
+    },
+    "giant-scorpion1a": {
+      "name": "Giant Scorpion",
+      "type": "monster",
+      "class": "giant-scorpion",
+      "lvl": 1
+    },
+    "giant-scorpion1b": {
+      "name": "Giant Scorpion",
+      "type": "monster",
+      "class": "giant-scorpion",
+      "lvl": 1
+    },
+    "giant-scorpion1c": {
+      "name": "Giant Scorpion",
+      "type": "monster",
+      "class": "giant-scorpion",
+      "lvl": 1
+    },
+    "angel1a": {
+      "name": "Angel",
+      "type": "monster",
+      "class": "angel",
+      "lvl": 1
+    },
+    "angel1b": {
+      "name": "Angel",
+      "type": "monster",
+      "class": "angel",
+      "lvl": 1
+    },
+    "angel1c": {
+      "name": "Angel",
+      "type": "monster",
+      "class": "angel",
+      "lvl": 1
+    },
+    "centaur1a": {
+      "name": "Centaur",
+      "type": "monster",
+      "class": "centaur",
+      "lvl": 1
+    },
+    "centaur1b": {
+      "name": "Centaur",
+      "type": "monster",
+      "class": "centaur",
+      "lvl": 1
+    },
+    "centaur1c": {
+      "name": "Centaur",
+      "type": "monster",
+      "class": "centaur",
+      "lvl": 1
+    },
+    "lizard-man1a": {
+      "name": "Lizard Man",
+      "type": "monster",
+      "class": "lizard-man",
+      "lvl": 1
+    },
+    "lizard-man1b": {
+      "name": "Lizard Man",
+      "type": "monster",
+      "class": "lizard-man",
+      "lvl": 1
+    },
+    "lizard-man1c": {
+      "name": "Lizard Man",
+      "type": "monster",
+      "class": "lizard-man",
+      "lvl": 1
+    },
+    "pixie1a": {
+      "name": "Pixie",
+      "type": "monster",
+      "class": "pixie",
+      "lvl": 1
+    },
+    "pixie1b": {
+      "name": "Pixie",
+      "type": "monster",
+      "class": "pixie",
+      "lvl": 1
+    },
+    "pixie1c": {
+      "name": "Pixie",
+      "type": "monster",
+      "class": "pixie",
+      "lvl": 1
+    },
+    "clay-golem1a": {
+      "name": "Clay Golem",
+      "type": "monster",
+      "class": "clay-golem",
+      "lvl": 1
+    },
+    "clay-golem1b": {
+      "name": "Clay Golem",
+      "type": "monster",
+      "class": "clay-golem",
+      "lvl": 1
+    },
+    "clay-golem1c": {
+      "name": "Clay Golem",
+      "type": "monster",
+      "class": "clay-golem",
+      "lvl": 1
+    },
+    "gryphon1a": {
+      "name": "Gryphon",
+      "type": "monster",
+      "class": "gryphon",
+      "lvl": 1
+    },
+    "merman1a": {
+      "name": "Merman",
+      "type": "monster",
+      "class": "merman",
+      "lvl": 1
+    },
+    "satyr1a": {
+      "name": "Satyr",
+      "type": "monster",
+      "class": "satyr",
+      "lvl": 1
+    },
+    "satyr1b": {
+      "name": "Satyr",
+      "type": "monster",
+      "class": "satyr",
+      "lvl": 1
+    },
+    "cyclops1a": {
+      "name": "Cyclops",
+      "type": "monster",
+      "class": "cyclops",
+      "lvl": 1
+    },
+    "merfolk1a": {
+      "name": "Merfolk",
+      "type": "monster",
+      "class": "merfolk",
+      "lvl": 1
+    },
+    "wyvern1a": {
+      "name": "Wyvern",
+      "type": "monster",
+      "class": "wyvern",
+      "lvl": 1
+    },
+    "cerberus1a": {
+      "name": "Cerberus",
+      "type": "monster",
+      "class": "cerberus",
+      "lvl": 1
+    },
+    "chimaera1a": {
+      "name": "Chimaera",
+      "type": "monster",
+      "class": "chimaera",
+      "lvl": 1
+    },
+    "cockatrice1a": {
+      "name": "Cockatrice",
+      "type": "monster",
+      "class": "cockatrice",
+      "lvl": 1
+    },
+    "jinn1a": {
+      "name": "Jinn",
+      "type": "monster",
+      "class": "jinn",
+      "lvl": 1
+    },
+    "lich1a": {
+      "name": "Lich",
+      "type": "monster",
+      "class": "lich",
+      "lvl": 1
+    },
+    "hydra1a": {
+      "name": "Hydra",
+      "type": "monster",
+      "class": "hydra",
+      "lvl": 1
+    },
+    "draugr1a": {
+      "name": "Draugr",
+      "type": "monster",
+      "class": "draugr",
+      "lvl": 1
+    },
+    "drake1a": {
+      "name": "Drake",
+      "type": "monster",
+      "class": "drake",
+      "lvl": 1
+    },
+    "harpy1a": {
+      "name": "Harpy",
+      "type": "monster",
+      "class": "harpy",
+      "lvl": 1
+    },
+    "behemoth1a": {
+      "name": "Behemoth",
+      "type": "monster",
+      "class": "behemoth",
+      "lvl": 1
+    },
+    "giant-spider1a": {
+      "name": "Giant Spider",
+      "type": "monster",
+      "class": "giant-spider",
+      "lvl": 1
+    },
+    "imp1a": {
+      "name": "Imp",
+      "type": "monster",
+      "class": "imp",
+      "lvl": 1
+    },
+    "yeti1a": {
+      "name": "Yeti",
+      "type": "monster",
+      "class": "yeti",
+      "lvl": 1
+    },
+    "mandrake1a": {
+      "name": "Mandrake",
+      "type": "monster",
+      "class": "mandrake",
+      "lvl": 1
+    },
+    "reaper1a": {
+      "name": "Reaper",
+      "type": "monster",
+      "class": "reaper",
+      "lvl": 1
+    },
+    "wyrm1a": {
+      "name": "Wyrm",
+      "type": "monster",
+      "class": "wyrm",
+      "lvl": 1
+    },
+    "wolf1a": {
+      "name": "Wolf",
+      "type": "monster",
+      "class": "wolf",
+      "lvl": 1
+    },
+    "skeleton1a": {
+      "name": "Skeleton",
+      "type": "monster",
+      "class": "skeleton",
+      "lvl": 1
+    },
+    "titan1a": {
+      "name": "Titan",
+      "type": "monster",
+      "class": "titan",
+      "lvl": 1
+    }
+  }
+}
