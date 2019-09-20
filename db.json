@@ -1,16 +1,15 @@
 {
-  "spells": {
-    "spell1": {
-      "name": "name",
+  "spells": [
+  {
+      "name": "Spell1",
       "type": "red",
       "description": "lorem ipsum",
       "element": "red",
       "cost": 10,
       "area": 1,
       "range": 4
-    },
-    "spell2": {
-      "name": "name",
+    },{
+      "name": "Spell2",
       "type": "red",
       "description": "lorem ipsum",
       "element": "red",
@@ -18,7 +17,7 @@
       "area": 1,
       "range": 3
     }
-  },
+  ],
   "items": {
     "item1": {
       "name": "item1",
